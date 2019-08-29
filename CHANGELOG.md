@@ -5,17 +5,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Alpha
 
-## 0.0.1 - 20190829a
-> by inoro <ssppaamm@protonmail.com>
-### Added
-- Añadidos todos los archivos base para el proyecto.
-- Estilos y elementos de la primera fase completados.
-- Estilos y elementos de la segunda fase completados.
-- Estilos y elementos de la tercera a medias.
-
 ## 0.0.2 - 20190830a
 > by inoro <ssppaamm@protonmail.com>
 ### Added
-- Estilos y elementos de la cuarta fase completados.
+- Estilos y elementos de la cuarta fase.
 ### Changed
 - Estilos y elementos de la tercera fase completados.
+
+## 0.0.1 - 20190829a
+> by inoro <ssppaamm@protonmail.com>
+### Added
+- Todos los archivos base para el proyecto.
+- Estilos y elementos de la primera fase.
+- Estilos y elementos de la segunda fase.
+### Changed
+- Estilos y elementos de la tercera a medias.
