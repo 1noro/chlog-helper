@@ -15,5 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## 0.0.2 - 20190830a
 > by inoro <ssppaamm@protonmail.com>
+### Added
+- Estilos y elementos de la cuarta fase completados.
 ### Changed
 - Estilos y elementos de la tercera fase completados.

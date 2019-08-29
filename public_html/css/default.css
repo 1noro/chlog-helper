@@ -29,7 +29,11 @@ body {
 .td15 {width: 15%;}
 
 /*############################################################################*/
-.my_big_button, .my_input_cont, .my_changes_button_cont, .my_list_cont {
+.my_big_button,
+.my_input_cont,
+.my_changes_button_cont,
+.my_list_cont,
+.my_textarea_cont {
     box-sizing: border-box;
     width: auto;
     max-width: 550px;
@@ -118,6 +122,25 @@ body {
 
 .my_list_cont ul {
     padding-left: 35px;
+}
+/*############################################################################*/
+.my_textarea_cont {
+    margin: 0px auto;
+    border: 1px solid grey;
+    padding: 0px;
+    height: 500px;
+}
+
+.my_textarea {
+    box-sizing: border-box;
+    margin: 0px;
+    border: none;
+    resize: none;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    background: none;
+    /* background-color: green; */
 }
 
 /*############################################################################*/
