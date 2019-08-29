@@ -23,15 +23,121 @@
 		<div id="full_cont">
 			<h2>CHLOG_HELPER</h2>
 
-			<div id="new_btn" class="my_big_button">
+			<!-- STATE 1 -->
+
+			<div id="new_btn" class="my_big_button blue_btnc ddm default_hidden ">
 				NEW<br>
 				CHANGELOG
 			</div>
 
-			<div id="continue_btn" class="my_big_button purple_btnc">
+			<div id="continue_btn" class="my_big_button purple_btnc ddm default_hidden">
 				CONTINUE AN<br>
 				EXISTING ONE
 			</div>
+
+			<!-- STATE 2 -->
+
+			<div class="my_input_cont ddm default_hidden">
+				<select id="version_phase" name="version_phase" class="my_input my_select_input" title="Version phase">
+					<option value="Unreleased" selected="true">Unreleased</option>
+					<option value="Alpha">Alpha</option>
+					<option value="Beta">Beta</option>
+					<option value="Candidate">Candidate</option>
+					<option value="Release">Release</option>
+				</select>
+			</div>
+
+			<div class="my_input_cont my_text_input_cont ddm default_hidden" onclick="document.getElementById('version').focus();">
+				<input
+					type="text"
+					id="version"
+					name="version"
+					class="my_input my_text_input"
+					value="0.0.1"
+					placeholder="version"
+					title="Version">
+			</div>
+
+			<div class="my_input_cont my_text_input_cont ddm default_hidden" onclick="document.getElementById('author').focus();">
+				<input
+					type="text"
+					id="author"
+					name="author"
+					class="my_input my_text_input"
+					value=""
+					placeholder="global author"
+					title="Global author of the following entries">
+			</div>
+
+			<div class="my_input_cont my_text_input_cont ddm default_hidden" onclick="document.getElementById('author_mail').focus();">
+				<input
+					type="text"
+					id="author_mail"
+					name="author_mail"
+					class="my_input my_text_input"
+					value=""
+					placeholder="author's mail"
+					title="Author's e-mail">
+			</div>
+
+			<div id="begin_btn" class="my_big_button blue_btnc ddm default_hidden">
+				BEGIN
+			</div>
+
+			<!-- STATE 3 -->
+
+			<div id="generate_btn" class="my_big_button orange_btnc ddm">
+				BACK
+			</div>
+
+			<div class="my_changes_button_cont">
+				<table class="my_changes_button_table">
+					<tr>
+						<td class="my_changes_button_td1">
+							<div id="change_type_added" class="my_big_button purple_btnc">
+								ADDED
+							</div>
+						</td>
+						<td class="my_changes_button_td2">
+							<div id="change_type_added" class="my_big_button purple_btnc">
+								ADDED
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="change_type_added" class="my_big_button purple_btnc">
+				ADDED
+			</div>
+
+			<div id="change_type_changed" class="my_big_button purple_btnc">
+				CHANGED
+			</div>
+
+			<div id="change_type_deprecated" class="my_big_button purple_btnc">
+				DEPRECATED
+			</div>
+
+			<div id="change_type_removed" class="my_big_button purple_btnc">
+				REMOVED
+			</div>
+
+			<div id="change_type_fixed" class="my_big_button purple_btnc">
+				FIXED
+			</div>
+
+			<div id="change_type_security" class="my_big_button purple_btnc">
+				SECURITY
+			</div>
+
+			<div id="generate_btn" class="my_big_button blue_btnc ddm">
+				GENERATE
+			</div>
+
+			<!-- STATE 3.1 -->
+
+			<!-- STATE 4 -->
 
 			<footer>
 				<p>(c) <a href="https://github.com/boot1110001">inoro</a> 2019 - <a href="https://www.gnu.org/licenses/gpl.txt">GPL v3</a> // <a href="donations.html">donations</a></p>

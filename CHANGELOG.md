@@ -1,7 +1,5 @@
 # Changelog
-Project [chlog-helper](https://github.com/boot1110001/chlog-helper).
-
-All notable changes to this project will be documented in this file.
+All notable changes to [chlog-helper](https://github.com/boot1110001/chlog-helper) will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
@@ -11,4 +9,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 > by inoro <ssppaamm@protonmail.com>
 ### Added
 - Añadidos todos los archivos base para el proyecto.
-- Estilos de la primera fase completados.
+- Estilos y elementos de la primera fase completados.
+- Estilos y elementos de la segunda fase completados.
+- Estilos y elementos de la tercera a medias.

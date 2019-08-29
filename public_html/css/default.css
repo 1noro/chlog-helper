@@ -23,10 +23,15 @@ body {
 }
 
 /*############################################################################*/
+.default_hidden {display: none}
+
+/* default_div_margin */
+.ddm {margin: 17px auto}
+
+/*############################################################################*/
 .my_big_button {
     width: auto;
     max-width: 500px;
-    margin: 0px auto;
 
     background-color: #4ba9e7;
     color: #ffffff;
@@ -35,6 +40,7 @@ body {
     font-size: 30px;
     line-height: 30px;
     padding: 20px;
+    border: 1px solid grey;
 
     cursor: pointer;
 }
@@ -47,6 +53,10 @@ body {
 .purple_btnc:hover {background-color: #9a66ca}
 .purple_btnc:active {background-color: #8753b7}
 
+.blue_btnc {background-color: #4ba9e7}
+.blue_btnc:hover {background-color: #3896d4}
+.blue_btnc:active {background-color: #2583c1}
+
 .green_btnc {background-color: #7bb230}
 .green_btnc:hover {background-color: #69a01e}
 .green_btnc:active {background-color: #548b14}
@@ -56,3 +66,49 @@ body {
 .orange_btnc:active {background-color: #d03e0f}
 
 /*############################################################################*/
+.my_input_cont {
+    /* background-color: #f0f0f0; */
+    width: auto;
+    max-width: 500px;
+    margin: 17px auto;
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+.my_text_input_cont {cursor: text;}
+
+.my_input {
+    width: 100%;
+    border: none;
+    background: none;
+    text-align: center;
+
+    font-family: "My Courier New", "Courier New";
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.my_select_input {}
+.my_text_input {}
+
+/*############################################################################*/
+.my_changes_button_cont {}
+.my_changes_button_table {}
+.my_changes_button_td1 {}
+.my_changes_button_td2 {}
+
+.my_changes_button {
+    width: auto;
+    max-width: 500px;
+
+    background-color: #4ba9e7;
+    color: #ffffff;
+
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 20px;
+    border: 1px solid grey;
+
+    cursor: pointer;
+}
