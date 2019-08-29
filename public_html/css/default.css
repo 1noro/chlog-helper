@@ -16,7 +16,7 @@ body {
     background-color: #ffffff;
     min-width: 280px;
     width: auto;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0px auto;
     text-align: center;
 
@@ -25,16 +25,18 @@ body {
 
 /*############################################################################*/
 .default_hidden {display: none}
+.ddm {margin: 17px auto} /* default_div_margin */
+.td15 {width: 15%;}
 
-/* default_div_margin */
-.ddm {margin: 17px auto}
+/*############################################################################*/
+.my_big_button, .my_input_cont, .my_changes_button_cont, .my_list_cont {
+    box-sizing: border-box;
+    width: auto;
+    max-width: 550px;
+}
 
 /*############################################################################*/
 .my_big_button {
-    box-sizing: border-box;
-    width: auto;
-    max-width: 500px;
-
     background-color: #4ba9e7;
     color: #ffffff;
 
@@ -52,10 +54,6 @@ body {
 
 /*############################################################################*/
 .my_input_cont {
-    /* background-color: #f0f0f0; */
-    box-sizing: border-box;
-    width: auto;
-    max-width: 500px;
     margin: 17px auto;
     border: 1px solid grey;
     padding: 20px;
@@ -80,9 +78,6 @@ body {
 /*############################################################################*/
 .my_changes_button_cont {
     background-color: green;
-    width: auto;
-    box-sizing: border-box;
-    max-width: 500px;
     margin: 0px auto;
 }
 
@@ -95,17 +90,8 @@ body {
     padding: 0px;
 }
 
-.my_changes_button_td1 {
-
-}
-
-.my_changes_button_td2 {
-    width: 15%;
-}
-
 .my_changes_button {
     width: auto;
-    max-width: 500px;
 
     color: #ffffff;
 
@@ -118,6 +104,20 @@ body {
     border: 1px solid grey;
 
     cursor: pointer;
+}
+
+/*############################################################################*/
+.my_list_cont {
+    margin: 0px auto;
+    border: 1px solid grey;
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.my_list_cont ul {
+    padding-left: 35px;
 }
 
 /*############################################################################*/
@@ -136,3 +136,7 @@ body {
 .orange_btnc {background-color: #fe6d40}
 .orange_btnc:hover {background-color: #ed5b2c}
 .orange_btnc:active {background-color: #d03e0f}
+
+.grey_btnc {background-color: #A9A9A9}
+.grey_btnc:hover {background-color: #808080}
+.grey_btnc:active {background-color: #696969}
