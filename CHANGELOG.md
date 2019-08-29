@@ -18,5 +18,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Todos los archivos base para el proyecto.
 - Estilos y elementos de la primera fase.
 - Estilos y elementos de la segunda fase.
-### Changed
 - Estilos y elementos de la tercera a medias.
