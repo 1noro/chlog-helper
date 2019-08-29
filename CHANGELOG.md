@@ -12,3 +12,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Estilos y elementos de la primera fase completados.
 - Estilos y elementos de la segunda fase completados.
 - Estilos y elementos de la tercera a medias.
+
+## 0.0.2 - 20190830a
+> by inoro <ssppaamm@protonmail.com>
+### Added
+- Añadidos todos los archivos base para el proyecto.
+- Estilos y elementos de la primera fase completados.
+- Estilos y elementos de la segunda fase completados.
+- Estilos y elementos de la tercera a medias.
