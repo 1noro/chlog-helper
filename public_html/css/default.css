@@ -5,20 +5,54 @@ body {
     margin: 0px;
     font-size: 17px;
     font-family: "My Courier New", "Courier New";
-    /* background-color: #cbcbcb; */
-    background-color: #ffffff;
+    background-color: #cbcbcb;
+    /* background-color: #ffffff; */
     color: #3c3c3c;
 }
 
 /*############################################################################*/
 #full_cont {
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
     min-width: 280px;
     width: auto;
-    margin: 10px;
+    max-width: 1000px;
+    margin: 0px auto;
     text-align: center;
 
     padding: 10px;
 }
+
+/*############################################################################*/
+.my_big_button {
+    width: auto;
+    max-width: 500px;
+    margin: 0px auto;
+
+    background-color: #4ba9e7;
+    color: #ffffff;
+
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 20px;
+
+    cursor: pointer;
+}
+
+.my_big_button:hover {background-color: #3896d4;}
+.my_big_button:active {background-color: #2583c1;}
+
+/*############################################################################*/
+.purple_btnc {background-color: #ad79dd}
+.purple_btnc:hover {background-color: #9a66ca}
+.purple_btnc:active {background-color: #8753b7}
+
+.green_btnc {background-color: #7bb230}
+.green_btnc:hover {background-color: #69a01e}
+.green_btnc:active {background-color: #548b14}
+
+.orange_btnc {background-color: #fe6d40}
+.orange_btnc:hover {background-color: #ed5b2c}
+.orange_btnc:active {background-color: #d03e0f}
 
 /*############################################################################*/
