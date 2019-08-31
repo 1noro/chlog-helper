@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- index.html -->
-<!-- (c) inoro 2019 GPL v3a-->
+<!-- (c) inoro 2019 GPL v3-->
 <html>
 
 	<head>
@@ -14,7 +14,14 @@
         <link href="css/font_faces.css" rel="stylesheet">
         <link href="css/default.css" rel="stylesheet">
 
+        <script src="js/var.js"></script>
         <script src="js/utils.js"></script>
+
+        <script src="js/state1.js"></script>
+        <script src="js/state2.js"></script>
+        <script src="js/state3.js"></script>
+        <script src="js/state4.js"></script>
+
         <script src="js/main.js"></script>
 	</head>
 
@@ -25,19 +32,19 @@
 
 			<!-- STATE 1 -->
 
-			<div id="new_btn" class="my_big_button blue_btnc ddm default_hidden ">
+			<div id="new_btn" class="my_big_button blue_btnc ddm" onclick="new_chlog_btn();">
 				NEW<br>
 				CHANGELOG
 			</div>
 
-			<div id="continue_btn" class="my_big_button purple_btnc ddm default_hidden">
+			<div id="continue_btn" class="my_big_button purple_btnc ddm" onclick="to_state2();">
 				CONTINUE AN<br>
 				EXISTING ONE
 			</div>
 
 			<!-- STATE 2 -->
 
-			<div class="my_input_cont ddm default_hidden">
+			<div id="version_phase_input" class="my_input_cont ddm default_hidden">
 				<select id="version_phase" name="version_phase" class="my_input my_select_input" title="Version phase">
 					<option value="Unreleased" selected="true">Unreleased</option>
 					<option value="Alpha">Alpha</option>
@@ -47,7 +54,7 @@
 				</select>
 			</div>
 
-			<div class="my_input_cont my_text_input_cont ddm default_hidden" onclick="document.getElementById('version').focus();">
+			<div id="version_input" class="my_input_cont my_text_input_cont ddm default_hidden" onclick="document.getElementById('version').focus();">
 				<input
 					type="text"
 					id="version"
@@ -58,7 +65,7 @@
 					title="Version">
 			</div>
 
-			<div class="my_input_cont my_text_input_cont ddm default_hidden" onclick="document.getElementById('author').focus();">
+			<div id="author_input" class="my_input_cont my_text_input_cont ddm default_hidden" onclick="document.getElementById('author').focus();">
 				<input
 					type="text"
 					id="author"
@@ -69,7 +76,7 @@
 					title="Global author of the following entries">
 			</div>
 
-			<div class="my_input_cont my_text_input_cont ddm default_hidden" onclick="document.getElementById('author_mail').focus();">
+			<div id="author_mail_input" class="my_input_cont my_text_input_cont ddm default_hidden" onclick="document.getElementById('author_mail').focus();">
 				<input
 					type="text"
 					id="author_mail"
@@ -80,17 +87,17 @@
 					title="Author's e-mail">
 			</div>
 
-			<div id="begin_btn" class="my_big_button blue_btnc ddm default_hidden">
+			<div id="begin_btn" class="my_big_button blue_btnc ddm default_hidden" onclick="begin_btn();">
 				BEGIN
 			</div>
 
 			<!-- STATE 3 -->
 
-			<div id="generate_btn" class="my_big_button orange_btnc ddm default_hidden">
+			<div id="back3_btn" class="my_big_button orange_btnc ddm default_hidden">
 				BACK
 			</div>
 
-			<div class="my_changes_button_cont default_hidden">
+			<div id="ct_added_cont" class="my_changes_button_cont default_hidden">
 				<table class="my_changes_button_table">
 					<tr>
 						<td>
@@ -107,7 +114,7 @@
 				</table>
 			</div>
 
-			<div class="my_list_cont default_hidden">
+			<div id="list_added_cont" class="my_list_cont default_hidden">
 				<ul>
 					<li>Hola.</li>
 					<li>Añadidos todos los archivos base para el proyecto.</li>
@@ -117,7 +124,7 @@
 				</ul>
 			</div>
 
-			<div class="my_changes_button_cont default_hidden">
+			<div id="ct_changed_cont" class="my_changes_button_cont default_hidden">
 				<table class="my_changes_button_table">
 					<tr>
 						<td>
@@ -134,7 +141,17 @@
 				</table>
 			</div>
 
-			<div class="my_changes_button_cont default_hidden">
+			<div id="list_changed_cont" class="my_list_cont default_hidden">
+				<ul>
+					<li>Hola.</li>
+					<li>Añadidos todos los archivos base para el proyecto.</li>
+					<li>Estilos y elementos de la primera fase completados.</li>
+					<li>Estilos y elementos de la segunda fase completados.</li>
+					<li>Estilos y elementos de la tercera a medias.</li>
+				</ul>
+			</div>
+
+			<div id="ct_deprecated_cont" class="my_changes_button_cont default_hidden">
 				<table class="my_changes_button_table">
 					<tr>
 						<td>
@@ -151,7 +168,17 @@
 				</table>
 			</div>
 
-			<div class="my_changes_button_cont default_hidden">
+			<div id="list_deprecated_cont" class="my_list_cont default_hidden">
+				<ul>
+					<li>Hola.</li>
+					<li>Añadidos todos los archivos base para el proyecto.</li>
+					<li>Estilos y elementos de la primera fase completados.</li>
+					<li>Estilos y elementos de la segunda fase completados.</li>
+					<li>Estilos y elementos de la tercera a medias.</li>
+				</ul>
+			</div>
+
+			<div id="ct_removed_cont" class="my_changes_button_cont default_hidden">
 				<table class="my_changes_button_table">
 					<tr>
 						<td>
@@ -168,7 +195,17 @@
 				</table>
 			</div>
 
-			<div class="my_changes_button_cont default_hidden">
+			<div id="list_removed_cont" class="my_list_cont default_hidden">
+				<ul>
+					<li>Hola.</li>
+					<li>Añadidos todos los archivos base para el proyecto.</li>
+					<li>Estilos y elementos de la primera fase completados.</li>
+					<li>Estilos y elementos de la segunda fase completados.</li>
+					<li>Estilos y elementos de la tercera a medias.</li>
+				</ul>
+			</div>
+
+			<div id="ct_fixed_cont" class="my_changes_button_cont default_hidden">
 				<table class="my_changes_button_table">
 					<tr>
 						<td>
@@ -185,7 +222,17 @@
 				</table>
 			</div>
 
-			<div class="my_changes_button_cont default_hidden">
+			<div id="list_fixed_cont" class="my_list_cont default_hidden">
+				<ul>
+					<li>Hola.</li>
+					<li>Añadidos todos los archivos base para el proyecto.</li>
+					<li>Estilos y elementos de la primera fase completados.</li>
+					<li>Estilos y elementos de la segunda fase completados.</li>
+					<li>Estilos y elementos de la tercera a medias.</li>
+				</ul>
+			</div>
+
+			<div id="ct_security_cont" class="my_changes_button_cont default_hidden">
 				<table class="my_changes_button_table">
 					<tr>
 						<td>
@@ -202,6 +249,16 @@
 				</table>
 			</div>
 
+			<div id="list_security_cont" class="my_list_cont default_hidden">
+				<ul>
+					<li>Hola.</li>
+					<li>Añadidos todos los archivos base para el proyecto.</li>
+					<li>Estilos y elementos de la primera fase completados.</li>
+					<li>Estilos y elementos de la segunda fase completados.</li>
+					<li>Estilos y elementos de la tercera a medias.</li>
+				</ul>
+			</div>
+
 			<div id="generate_btn" class="my_big_button blue_btnc ddm default_hidden">
 				GENERATE
 			</div>
@@ -210,15 +267,15 @@
 
 			<!-- STATE 4 -->
 
-			<div id="generate_btn" class="my_big_button orange_btnc ddm">
+			<div id="back4_btn" class="my_big_button orange_btnc ddm default_hidden">
 				BACK
 			</div>
 
-			<div class="my_textarea_cont ddm">
+			<div class="my_textarea_cont ddm default_hidden">
 				<textarea id="result" name="name" class="my_textarea"></textarea>
 			</div>
 
-			<div id="copy_btn" class="my_big_button purple_btnc ddm">
+			<div id="copy_btn" class="my_big_button purple_btnc ddm default_hidden">
 				COPY
 			</div>
 
