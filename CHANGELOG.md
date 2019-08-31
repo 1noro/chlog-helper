@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## 0.0.3 - 20190831a
 ### Added
+- Disclaimer al footer.
 - Funcionabilidad JS de transición entre los estados 1 y 4.
 - Funcionabilidad JS de visualización de las listas de cambios.
 ### Changed
