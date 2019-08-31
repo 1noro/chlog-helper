@@ -8,9 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## 0.0.3 - 20190831a
 > by inoro <ssppaamm@protonmail.com>
 ### Added
-- Funcionabilidad JS de transición entre los estados 1 y 3.
+- Funcionabilidad JS de transición entre los estados 1 y 4.
+- Funcionabilidad JS de visualización de las listas de cambios.
 ### Changed
-- IDs de algunos de los elementos de los estados 2 y 3.
+- IDs de algunos de los elementos de los estados 2, 3 y 4.
 
 ## 0.0.2 - 20190830a
 > by inoro <ssppaamm@protonmail.com>

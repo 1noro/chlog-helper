@@ -93,7 +93,7 @@
 
 			<!-- STATE 3 -->
 
-			<div id="back3_btn" class="my_big_button orange_btnc ddm default_hidden">
+			<div id="back3_btn" class="my_big_button orange_btnc ddm default_hidden" onclick="back3_btn();">
 				BACK
 			</div>
 
@@ -101,7 +101,10 @@
 				<table class="my_changes_button_table">
 					<tr>
 						<td>
-							<div id="change_type_added" class="my_changes_button grey_btnc">
+							<div
+								id="change_type_added"
+								class="my_changes_button grey_btnc"
+								onclick="display_list('list_added_cont');">
 								#ADDED
 							</div>
 						</td>
@@ -128,7 +131,10 @@
 				<table class="my_changes_button_table">
 					<tr>
 						<td>
-							<div id="change_type_changed" class="my_changes_button grey_btnc">
+							<div
+								id="change_type_changed"
+								class="my_changes_button grey_btnc"
+								onclick="display_list('list_changed_cont');">
 								#CHANGED
 							</div>
 						</td>
@@ -155,7 +161,10 @@
 				<table class="my_changes_button_table">
 					<tr>
 						<td>
-							<div id="change_type_deprecated" class="my_changes_button grey_btnc">
+							<div
+								id="change_type_deprecated"
+								class="my_changes_button grey_btnc"
+								onclick="display_list('list_deprecated_cont');">
 								#DEPRECATED
 							</div>
 						</td>
@@ -182,7 +191,10 @@
 				<table class="my_changes_button_table">
 					<tr>
 						<td>
-							<div id="change_type_removed" class="my_changes_button grey_btnc">
+							<div
+								id="change_type_removed"
+								class="my_changes_button grey_btnc"
+								onclick="display_list('list_removed_cont');">
 								#REMOVED
 							</div>
 						</td>
@@ -209,7 +221,10 @@
 				<table class="my_changes_button_table">
 					<tr>
 						<td>
-							<div id="change_type_fixed" class="my_changes_button grey_btnc">
+							<div
+								id="change_type_fixed"
+								class="my_changes_button grey_btnc"
+								onclick="display_list('list_fixed_cont');">
 								#FIXED
 							</div>
 						</td>
@@ -236,7 +251,10 @@
 				<table class="my_changes_button_table">
 					<tr>
 						<td>
-							<div id="change_type_security" class="my_changes_button grey_btnc">
+							<div
+								id="change_type_security"
+								class="my_changes_button grey_btnc"
+								onclick="display_list('list_security_cont');">
 								#SECURITY
 							</div>
 						</td>
@@ -259,7 +277,7 @@
 				</ul>
 			</div>
 
-			<div id="generate_btn" class="my_big_button blue_btnc ddm default_hidden">
+			<div id="generate_btn" class="my_big_button blue_btnc ddm default_hidden" onclick="generate_btn();">
 				GENERATE
 			</div>
 
@@ -267,11 +285,11 @@
 
 			<!-- STATE 4 -->
 
-			<div id="back4_btn" class="my_big_button orange_btnc ddm default_hidden">
+			<div id="back4_btn" class="my_big_button orange_btnc ddm default_hidden" onclick="back4_btn();">
 				BACK
 			</div>
 
-			<div class="my_textarea_cont ddm default_hidden">
+			<div id="result_cont" class="my_textarea_cont ddm default_hidden">
 				<textarea id="result" name="name" class="my_textarea"></textarea>
 			</div>
 
